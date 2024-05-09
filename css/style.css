@@ -1,0 +1,142 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--clr-black);
+}
+body{
+    height: 100vh;
+    background: var(--clr-gray);
+
+}
+header{
+    padding-block: 1rem;
+    box-shadow: 0 0 2rem -1rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+ul{
+    list-style-type: none;
+}
+.logo{
+    width: 10%;
+    height: 10vh;
+    object-fit: contain;
+}
+button{
+    background: none;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 100vmax;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, .25);
+}
+button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgb(0, 0, 0, .25) ;
+    transition: 0.2s;
+}
+main{
+    padding: 2rem;
+}
+.pokemon-imagen img{
+    width: 100%;
+    max-width: 6rem;
+}
+.todos__pokemon{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.pokemon{
+    border-radius: 1rem;
+    background-color: var(--clr-white);
+    box-shadow: 0 0 2rem -1rem rgb(0, 0, 0, .25);
+    padding-block: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+.pokemon-id-back{
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--clr-gray);
+    z-index: -1;
+}
+.boton__header{
+    background-color: var(--clr-gray);
+}
+.boton__header__normal{
+    background: var(--type-normal);
+}
+.boton__header__fie{
+    background: var(--type-fire);
+}
+.boton__header__Fighting{
+    background: var(--type-fighting);
+}
+.boton__header__Flying{
+    background: var(--type-flying);
+}
+.boton__header__Poison{
+    background: var(--type-poison);
+}
+.boton__header__Ground{
+    background: var(--type-ground);
+}
+.boton__header__Rock{
+    background: var(--type-rock);
+}
+.boton__header__Bug{
+    background: var(--type-bug);
+}
+.boton__header__Ghost{
+    background: var(--type-ghost);
+}
+.boton__header__Steel{
+    background: var(--type-steel);
+}
+.boton__header__water{
+    background: var(--type-water);
+}
+.boton__header__grass{
+    background: var(--type-grass);
+}
+.boton__header__Electric{
+    background: var(--type-electric);
+}
+.boton__header__Psychic{
+    background: var(--type-psychic);
+}
+.boton__header__Ice{
+    background: var(--type-ice);
+}
+.boton__header__Dragon{
+    background: var(--type-dragon);
+}
+.boton__header__Dark{
+    background: var(--type-dark);
+}
+.boton__header__Fairy{
+    background: var(--type-fairy);
+}
