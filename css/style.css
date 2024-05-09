@@ -20,6 +20,8 @@ header{
     flex-direction: column;
     gap: 1rem;
     padding-inline: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .nav-list{
     display: flex;
@@ -53,14 +55,67 @@ button:hover{
 }
 main{
     padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .pokemon-imagen img{
     width: 100%;
-    max-width: 6rem;
+    max-width: 10rem;
+}
+.pokemon-imagen{
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.pokemon-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-inline: 1rem;
+    text-align: center;
+    align-items: center;
+}
+.pokemon-contenedor{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pokemon-id{
+    background-color: var(--clr-gray);
+    padding: .25rem .5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 100vmax;
+}
+.pokemon-nombre{
+    font-size: 1.4rem;
+}
+.pokemon-tipos{
+    display: flex;
+    gap: .75rem;
+    font-weight: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tipo{
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
+}
+.pokemon-stats{
+    display: flex;
+    gap: 1rem;
+    font-size: .85rem;
+}
+.stat{
+    background-color: var(--clr-gray);
+    padding: .25rem .5rem;
+    border-radius: 100vmax;
 }
 .todos__pokemon{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 .pokemon{
@@ -89,31 +144,31 @@ main{
 .boton__header__normal{
     background: var(--type-normal);
 }
-.boton__header__fie{
+.boton__header__fire{
     background: var(--type-fire);
 }
-.boton__header__Fighting{
+.boton__header__fighting{
     background: var(--type-fighting);
 }
-.boton__header__Flying{
+.boton__header__flying{
     background: var(--type-flying);
 }
-.boton__header__Poison{
+.boton__header__poison{
     background: var(--type-poison);
 }
-.boton__header__Ground{
+.boton__header__ground{
     background: var(--type-ground);
 }
-.boton__header__Rock{
+.boton__header__rock{
     background: var(--type-rock);
 }
-.boton__header__Bug{
+.boton__header__bug{
     background: var(--type-bug);
 }
-.boton__header__Ghost{
+.boton__header__ghost{
     background: var(--type-ghost);
 }
-.boton__header__Steel{
+.boton__header__steel{
     background: var(--type-steel);
 }
 .boton__header__water{
@@ -122,21 +177,21 @@ main{
 .boton__header__grass{
     background: var(--type-grass);
 }
-.boton__header__Electric{
+.boton__header__electric{
     background: var(--type-electric);
 }
-.boton__header__Psychic{
+.boton__header__psychic{
     background: var(--type-psychic);
 }
-.boton__header__Ice{
+.boton__header__ice{
     background: var(--type-ice);
 }
-.boton__header__Dragon{
+.boton__header__dragon{
     background: var(--type-dragon);
 }
-.boton__header__Dark{
+.boton__header__dark{
     background: var(--type-dark);
 }
-.boton__header__Fairy{
+.boton__header__fairy{
     background: var(--type-fairy);
 }
